@@ -2,7 +2,10 @@
 //inicia a sessão
 session_start(); 
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 861bad683f25740a7eed998798644b34ec0ad5fe
 <!doctype html>
 <html lang="en">
 
@@ -52,7 +55,7 @@ session_start();
             } else {
                 echo '
                 <form class="form-inline my-2 my-lg-0" action="/controller/authenticate.php" method="post">
-                    <input class="form-control mr-sm-2" id="email" type="text" name="accountEmail" />
+                    <input class="form-control mr-sm-2" id="email" type="text" name="accountEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                     <input class="form-control mr-sm-2" id="password" type="password" name="accountPassword" />
                     <button class="btn btn-success my-2 my-sm-0" type="submit" name="login" value="Login">Login</button>
                 </form>
